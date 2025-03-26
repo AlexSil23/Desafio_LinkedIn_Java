@@ -96,12 +96,8 @@ public class Sorteo {
 		if(tablaPremios.isEmpty()) {
 			System.out.println("Sorteo pendiente... ");
 		}
-		tablaPremios.entrySet().stream().sorted(new Comparator<Map.Entry<Integer, Premios>>() {
-			@Override
-			public int compare(Entry<Integer, Premios> o1, Entry<Integer, Premios> o2) {
-				return o1.getValue().compareTo(o2.getValue());
-			}
-		}).forEach(v -> System.out.println(formatoLinea(v)));
+		tablaPremios.entrySet().stream().sorted(Comparator.comparing(Entry::getValue))
+        .forEach(v -> System.out.println(formatoLinea(v)));
 	}
 	
 	/**
