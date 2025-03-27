@@ -96,7 +96,8 @@ public class Sorteo {
 		if(tablaPremios.isEmpty()) {
 			System.out.println("Sorteo pendiente... ");
 		}
-		tablaPremios.entrySet().stream().sorted(Comparator.comparing(Entry::getValue))
+		tablaPremios.entrySet().stream()
+		.sorted(Comparator.comparing(Entry::getValue))
         .forEach(v -> System.out.println(formatoLinea(v)));
 	}
 	
