@@ -7,6 +7,7 @@ import java.util.Random;
 // TODO: Auto-generated Javadoc
 /**
  * The Class Sorteo.
+ * @author Alexander Silvera
  */
 public class Sorteo {
 
@@ -58,12 +59,16 @@ public class Sorteo {
 		}
 	}
 
-	/**
-	 * Num alazar.
-	 *
-	 * @return the int
-	 */
+    /**
+     * Genera un número aleatorio dentro del rango de la lista 'bombo'.
+     *
+     * @return Un número aleatorio entre 0 y el tamaño de la lista 'bombo' - 1.
+     * @throws IllegalStateException Si la lista 'bombo' está vacía.
+     */
 	private int numAlazar() {
+		if (bombo == null || bombo.isEmpty()) {
+			throw new IllegalStateException("El bombo está vacío. No se puede generar un número aleatorio.");
+		}
 		return R.nextInt(bombo.size());
 	}
 }

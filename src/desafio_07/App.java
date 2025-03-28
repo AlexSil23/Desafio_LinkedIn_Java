@@ -3,6 +3,7 @@ package desafio_07;
 // TODO: Auto-generated Javadoc
 /**
  * The Class App.
+ * @author Alexander Silvera
  */
 public class App {
 
@@ -17,5 +18,4 @@ public class App {
 		Sorteo s1 = new Sorteo(3);
 		s1.sorteo();
 	}
-
 }
