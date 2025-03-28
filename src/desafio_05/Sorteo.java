@@ -13,13 +13,13 @@ import java.util.TreeSet;
 public class Sorteo {
 
 	/** The min num. */
-	private final int MIN = 0;
+	private static final int MIN = 0;
 	
 	/** The max num. */
-	private final int MAX = 30;
+	private static final int MAX = 30;
 	
 	/** The num. */
-	private final int NUM = 5;
+	private static final int NUM = 5;
 	
 	/** The r. */
 	private final Random R = new Random();
