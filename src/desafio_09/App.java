@@ -15,7 +15,7 @@ public class App {
 	public static void main(String[] args) {
 		
 		Edad e1 = new Edad();
-		e1.edad();
+		e1.calcularEdad();
 
 	}
 }
