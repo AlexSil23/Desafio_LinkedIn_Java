@@ -6,15 +6,29 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.Scanner;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Edad.
+ * @author Alexander Silvera
+ */
 public class Edad {
 
+	/** The Constant PATRON. */
 	private static final String PATRON = "dd/MM/yyyy";
+	
+	/** The flag. */
 	private boolean flag;
 
+	/**
+	 * Instantiates a new edad.
+	 */
 	public Edad() {
 
 	}
 
+	/**
+	 * Edad.
+	 */
 	public void edad() {
 		try (Scanner s = new Scanner(System.in)) {
 			System.out.println("Ingrese tu fecha de nacimiento (" + PATRON + "):");
@@ -25,6 +39,12 @@ public class Edad {
 		}
 	}
 
+	/**
+	 * Es patron valido.
+	 *
+	 * @param cumple the cumple
+	 * @return true, if successful
+	 */
 	private boolean esPatronValido(String cumple) {
 		try {
 			DateTimeFormatter dtf = DateTimeFormatter.ofPattern(PATRON);
@@ -40,6 +60,11 @@ public class Edad {
 		}
 	}
 
+	/**
+	 * Mensaje.
+	 *
+	 * @param edad the edad
+	 */
 	private void mensaje(Period edad) {
 		System.out.println(
 				String.format("Edad: %d años, %d meses y %d días", edad.getYears(), edad.getMonths(), edad.getDays()));

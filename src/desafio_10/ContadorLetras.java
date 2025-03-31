@@ -7,6 +7,7 @@ import java.util.TreeMap;
 // TODO: Auto-generated Javadoc
 /**
  * The Class ContadorLetras.
+ * @author Alexander Silvera
  */
 public class ContadorLetras {
 
