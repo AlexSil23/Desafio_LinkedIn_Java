@@ -16,6 +16,7 @@ public class App {
 	public static void main(String[] args) {
 
 	Fecha f1 = new Fecha();
+	f1.toString();
 		
 	}
 }
