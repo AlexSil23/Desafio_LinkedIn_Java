@@ -29,10 +29,10 @@ public class CalcularMinimo {
 	}
 
 	/**
-	 * Cargar array.
-	 *
-	 * @param array the array
-	 * @return the int[]
+	 * Carga un array dado con números aleatorios entre 0 y 99.
+	 * 
+	 * @param array El array que se desea llenar con números aleatorios.
+	 * @return El mismo array después de ser cargado con números aleatorios.
 	 */
 	private static int[] cargarArray(int[] array) {
 		for (int i = 0; i < array.length; i++) {
@@ -42,9 +42,10 @@ public class CalcularMinimo {
 	}
 
 	/**
-	 * Pintar matriz.
+	 * Imprime en consola los elementos de un array en una sola línea,
+	 * mostrando cada número con formato de dos dígitos (rellenando con ceros si es necesario).
 	 *
-	 * @param array the array
+	 * @param array El array de enteros que se desea imprimir.
 	 */
 	private static void pintarMatriz(int[] array) {
 		for (int i = 0; i < array.length; i++) {
@@ -54,10 +55,10 @@ public class CalcularMinimo {
 	}
 
 	/**
-	 * Minimo.
+	 * Calcula y devuelve el valor mínimo contenido en un array de enteros.
 	 *
-	 * @param array the array
-	 * @return the int
+	 * @param array El array de enteros del cual se desea obtener el valor mínimo.
+	 * @return El menor valor encontrado en el array.
 	 */
 	private static int minimo(int[] array) {
 		int min = Integer.MAX_VALUE;
